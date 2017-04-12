@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Стёпан Колесниов](https://up.htmlacademy.ru/htmlcss/17/user/403445).
-* Наставник: `Евгений Закурдаев`(https://up.htmlacademy.ru/profile/id25657).
+* Наставник: `Евгений Закурдаев`(https://htmlacademy.ru/profile/id25657).
 
 ---
 
