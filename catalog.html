@@ -29,19 +29,17 @@
             </li>
           </ul>
         </nav>
-        <div class="header-title">
-          <h1>Магазин готовых шаблонов</h1>
-        </div>
+        <h1>Магазин готовых шаблонов</h1>
       </div>
     </header>
     <aside>
       <form ation="#" method="post">
         <fieldset class="cost">
           <legend>Стоимость:</legend>
-            <label>от</label>
-            <input type="text" name="total" id="total-field" value="0">
-            <label>до</label>
-            <input type="text" name="total" id="total-field" value="15000">
+            <label for="total-field-1">от</label>
+            <input type="text" name="total" id="total-field-1" value="0">
+            <label for="total-field-2">до</label>
+            <input type="text" name="total" id="total-field-2" value="15000">
         </fieldset>
         <fieldset class="grid">
           <legend>Сетка:</legend>
@@ -58,48 +56,47 @@
                 <label for="radio-3">Резиновая</label>
             </div>
         </fieldset>
-        <fieldset class="specificity">
+        <fieldset> 
           <legend>Особенности:</legend>
-            <div class-"checkbox-1">
-              <input id="check-1" type="checkbox" checked>
-              <lade for="check-1">Слайдер</lade>
-            </div>
-            <div class-"checkbox-2">
-              <input id="check-2" type="checkbox" >
-              <lade for="check-2">Блок преимуществ</lade>
-            </div>
-            <div class-"checkbox-3">
-              <input id="check-3" type="checkbox" >
-              <lade for="check-3">Новости</lade>
-            </div>
-            <div class-"checkbox-4">
-              <input id="check-4" type="checkbox" >
-              <lade for="check-4">Галерея</lade>
-            </div>
-            <div class-"checkbox-5">
-              <input id="check-5" type="checkbox" >
-              <lade for="check-5">Корзина</lade>
+            <div>
+              <input id="check=1" type="checkbox" name="slider" checked>
+              <label for="check=1">Слайдер</label>
             </div>
             <div>
-              <input type="submit" value="Показать">
+              <input id="check=2" type="checkbox" name="advantages">
+              <label for="check=2">Блок преимуществ</label>
+            </div>
+            <div>
+              <input id="check=3" type="checkbox" name="news">
+              <label for="check=3">Новости</label>
+            </div>
+            <div>
+              <input id="check=4" type="checkbox" name="gallery">
+              <label for="check=4">Галерея</label>
+            </div>
+            <div>
+              <input id="check=5" type="checkbox" name="basket">
+              <label for="check=5">Корзина</label>
             </div>
         </fieldset>
+        <button type="submit">Показать</button>
       </form>
     </aside>
     <main>
         <section class="catalog">
-        <div class="catalog-title">
-          <p class="">Сортировать:</p>
-        </div>
-        <div class="catalog-nav">
-          <form>
-          <button class="bbtn-catalog" type="button">По цене</button>
-          <botton class="btn-catalog" type="button">По типу</botton>
-          <botton class="btn-catalog" type="button">По названию</botton>
-          <botton class="btn-catalog-point" type="button"></botton>
-          <botton class="btn-catalog-point" type="button"></botton>
-          </form>
-        </div>
+          <div class="catalog-title">
+            <p class="">Сортировать:</p>
+          </div>
+          <div class="catalog-nav">
+            <form>
+            <button class="bbtn-catalog" type="button">По цене</button>
+            <button class="btn-catalog" type="button">По типу</button>
+            <button class="btn-catalog" type="button">По названию</button>
+            <button class="btn-catalog-point" type="button"></button>
+            <button class="btn-catalog-point" type="button"></button>
+            </form>
+          </div>
+        </section>  
         <section class="catalog-gallery">
           <div class="img-of-catalog">
             <figure>
@@ -173,7 +170,6 @@
             <a class="btn-pagination" href="#">3</a>
             <a class="btn-pagination-text" href="#">Следующая</a>
           </div>
-          </div>
         </section>
         <section class="contacts">
           <div class="contacts-info">
@@ -182,7 +178,6 @@
                  ул. Б. Конюшенная, д. 19/8</div>
             <div class="contacts-phone"> тел. +7(812)275-75-75</div>
             <a class="btn-red" href="#">НАПИШИТЕ НАМ</a>
-         </div>          
         </section>
     </main>
     <footer class="main-footer">
