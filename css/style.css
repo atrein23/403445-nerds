@@ -29,12 +29,80 @@ h2{
 	background-color: rgb(238, 238, 238);
 }
 .basket{
-	background-image: url("403445-nerds/img/cart-icon.png");
+	background-image: url("../img/cart-icon.png");
+	background-repeat: no-repeat;
+}
 }
 .slider-1{
-	width: 1200px;
-	height: 413px;
-	background-image: url("/img/slider1.png");
+	background-image: url("../img/slider1.png");
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+}
+.slider-2{
+	background-image: url("../img/slider2.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+}
+.slider-3{
+    background-image: url("../img/slider3.png");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+.readmore{
+	background-image: url("../img/btn-readmore.svg");
+	background-repeat: no-repeat;
+
+}
+.advantages-1{
+    background-image: url("../img/advantages-1.png");
+    background-repeat: no-repeat;
+}
+.advantages-2{
+    background-image: url("../img/advantages-2.png");
+    background-repeat: no-repeat;
+}
+.advantages-3{
+    background-image: url("../img/advantages-3.png");
+    background-repeat: no-repeat;
+}
+.statistics{
+	background-image: url("../img/statistics-illustration.png");
+    background-repeat: no-repeat;
+}
+.contacts{
+	background-image: url("../img/background-map.png");
+	background-repeat: no-repeat;
+}
+.contacts-info{
+	background-image: url("../img/white back.png");
+	background-repeat: no-repeat;
+}
+.social{
+	width: 263px;
+	height: 80px;
+}
+.btn-contacts{
+	background-image: url("../img/btn-contacts.svg");
+}
+.btn-social-vk{
+	background-image: url("../img/vk-icon.png");
+    background-image: url("../img/social-background.svg");
+}
+.btn-social-fb{
+	background-image: url("../img/fb-icon.png");
+    background-image: url("../img/social-background.svg");
+    background-repeat: no-repeat;
+}
+.btn-social-in{
+	background-image: url("../img/insta-icon.png");
+    background-image: url("../img/social-background.svg");
+    background-repeat: no-repeat;
+}
+/* чать каталога */
+.btn-buy{
+	background-image: url("../img/btn-readmore.svg");
+}
+.cite-info{
+	background-color: rgb(238, 238, 238);
 }
