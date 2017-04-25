@@ -28,11 +28,53 @@ h2{
 .main-header{
 	background-color: rgb(238, 238, 238);
 }
+
+.container{
+	width: 1160px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin: 0 auto;
+}
+
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.heder-logo{
+	float: left;
+	width: 160px;
+	margin-right: 100px;
+}
+
+.main-navigation{
+	float: left;
+	width: 700px;
+	margin-right: 40px;
+}
+
 .basket{
+	float: right;
+	width: 160px;
 	background-image: url("../img/cart-icon.png");
 	background-repeat: no-repeat;
+	margin-right: 0px;
 }
+
+.title-text{
+	font-size: 55px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Roboto", "Helvetica", "sans-serif";
+	color: rgb (0, 0, 0);
+	line-height: 55px;
 }
+
+.slider{
+	background-color: rgb(238, 238, 238);
+}
+
 .slider-1{
 	background-image: url("../img/slider1.png");
 	background-position: 50% 50%;
@@ -52,36 +94,122 @@ h2{
 .readmore{
 	background-image: url("../img/btn-readmore.svg");
 	background-repeat: no-repeat;
-
 }
+
+.advantages{
+	margin-bottom: 85px;
+}
+
+.advantages-title{
+	float: left;
+	width: 300px;
+	margin-right: 100px;
+}
+
+.advantages-title:last-child{
+	margin-right: 0px;
+}
+
 .advantages-1{
     background-image: url("../img/advantages-1.png");
     background-repeat: no-repeat;
+    margin-right: 100px;
 }
+
 .advantages-2{
     background-image: url("../img/advantages-2.png");
     background-repeat: no-repeat;
+    margin-right: 100px
 }
 .advantages-3{
     background-image: url("../img/advantages-3.png");
     background-repeat: no-repeat;
 }
-.statistics{
+
+
+.about-us{
+	margin-bottom: 80px;
+
+}
+
+.about-us-left{
+	float: left;
+	width: 660px;
+}
+
+.about-us-right{
+	float: right;
+	width: 380px;
+}
+
+
+.statisti!s{
 	background-image: url("../img/statistics-illustration.png");
     background-repeat: no-repeat;
 }
+
+
+.client{
+	margin-bottom: 80px;
+}
+
+.img-client-photo-1{
+	float: left;
+	width: 199px;
+	margin-left: 31px;
+	margin-right: 96px;
+}
+
+.img-client-photo-2{
+	float: left;
+	width: 217px;
+	margin-right: 103px;
+}
+
+.img-client-photo-3{
+	float: left;
+	width: 185px;
+	margin-right: 121px;
+}
+
+.img-client-photo-4{
+	float: right;
+	width: 173px;
+	margin-right: 4px;<?>
+}
+
 .contacts{
+	width: 1440px;
+	height: 418px;
 	background-image: url("../img/background-map.png");
 	background-repeat: no-repeat;
+	margin-bottom: 71px;
 }
 .contacts-info{
+	width: 319px;
+	height: 308px;
 	background-image: url("../img/white back.png");
 	background-repeat: no-repeat;
 }
-.social{
-	width: 263px;
-	height: 80px;
+
+.main-footer{
+	margin-bottom: 70px;
 }
+
+.social{
+	float: left;
+	width: 260px;
+	height: 80px;
+	margin-right: 100px;
+}
+
+.main-footer-info{
+	float: right;
+	width: 560px;
+	height: 80px;
+	margin-right: 200px;
+}
+
 .btn-contacts{
 	background-image: url("../img/btn-contacts.svg");
 }
@@ -99,10 +227,38 @@ h2{
     background-image: url("../img/social-background.svg");
     background-repeat: no-repeat;
 }
+
 /* чать каталога */
 .btn-buy{
 	background-image: url("../img/btn-readmore.svg");
 }
 .site-info{
 	background-color: rgb(238, 238, 238);
+}
+
+
+aside{
+	float:left;
+	width: 280px;
+	height: 779px;
+	margin-right: 60px;
+}
+
+.catalog{
+	float:right;
+	width: 76px;
+	height: px;
+	margin-right: px;
+}
+
+.header-title{
+	font-size: 55px;
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Roboto", "Helvetica", "sans-serif";
+	color: rgb (0, 0, 0);
+	line-height: 55px;
+	display: inline-block;
+	vertical-align: center;
+	text-align: center;
 }
