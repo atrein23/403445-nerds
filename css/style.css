@@ -73,6 +73,7 @@ h2{
 
 .slider{
 	background-color: rgb(238, 238, 238);
+	margin-bottom: 80px;
 }
 
 .slider-1{
@@ -236,7 +237,6 @@ h2{
 	background-color: rgb(238, 238, 238);
 }
 
-
 aside{
 	float:left;
 	width: 280px;
@@ -245,18 +245,42 @@ aside{
 }
 
 .catalog{
-	float:right;
-	width: 76px;
-	height: px;
-	margin-right: px;
+	margin-bottom: 61px;
+
 }
 
+.catalog-title{
+	float: left;
+	width: 133px;
+	margin-right: 267px;
+	margin-bottom: px;
+}
+.catalog-nav{
+	float: right;
+	width: 360px;
+	margin-bottom: px;
+}
+
+.catalog-gallery{
+
+}
+.catalog-sites{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 40px;
+}
+.figure{
+	
+}
+.site-info{
+	width: 360px;
+}
 .header-title{
 	font-size: 55px;
 	font-weight: normal;
 	font-style: normal;
 	font-family: "Roboto", "Helvetica", "sans-serif";
-	color: rgb (0, 0, 0);
+	color: #000;
 	line-height: 55px;
 	display: inline-block;
 	vertical-align: center;
