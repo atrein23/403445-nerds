@@ -1,13 +1,13 @@
-body{
+body {
 	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
 	font-family: "Roboto", "Helvetica", "sans-serif";
-	color: rgb (0, 0, 0);
+	color: #000;
 	line-height: 24px;
 }
 
-.titel-text{
+.titel-text {
 	font-size: 55px;
 	font-weight: normal;
 	font-style: normal;
@@ -16,7 +16,7 @@ body{
 	line-height: 55px;
 }
 
-h2{
+h2 {
 	font-size: 45px;
 	font-weight: normal;
 	font-style: normal;
@@ -25,44 +25,59 @@ h2{
 	line-height: 45px;
 }
 
-.main-header{
+.main-header {
 	background-color: rgb(238, 238, 238);
 }
 
-.container{
+.container {
 	width: 1160px;
 	padding-right: 20px;
 	padding-left: 20px;
 	margin: 0 auto;
 }
 
-.clearfix::after{
+.clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
 }
 
-.heder-logo{
+.heder-logo {
 	float: left;
 	width: 160px;
 	margin-right: 100px;
 }
 
-.main-navigation{
+.main-navigation {
 	float: left;
 	width: 700px;
-	margin-right: 40px;
+	margin-top: 70px;
 }
 
-.basket{
+ul {
+	list-style: none;
+}
+
+li {
+	display: inline-block;
+}
+
+.navigation {
+	display: inline;
+	margin-right: 10px;
+	padding-right: 40px;
+}
+
+.basket {
 	float: right;
-	width: 160px;
+	padding-left: 20px;
 	background-image: url("../img/cart-icon.png");
 	background-repeat: no-repeat;
-	margin-right: 0px;
+	background-position: left center;
+	margin-right: 0;
 }
 
-.title-text{
+.title-text {
 	font-size: 55px;
 	font-weight: normal;
 	font-style: normal;
@@ -71,212 +86,217 @@ h2{
 	line-height: 55px;
 }
 
-.slider{
+.sliders-wrap {
 	background-color: rgb(238, 238, 238);
 	margin-bottom: 80px;
 }
 
-.slider-1{
-	background-image: url("../img/slider1.png");
-	background-position: 50% 50%;
+.slider {
+	background-position: center;
 	background-repeat: no-repeat;
 }
-.slider-2{
-	background-image: url("../img/slider2.png");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
 
+.slider-1 {
+	background-image: url("../img/slider1.png");
 }
-.slider-3{
+
+.slider-2 {
+	background-image: url("../img/slider2.png");
+}
+
+.slider-3{ 
     background-image: url("../img/slider3.png");
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
 }
-.readmore{
+
+.readmore {
 	background-image: url("../img/btn-readmore.svg");
 	background-repeat: no-repeat;
 }
 
-.advantages{
+.advantages {
 	margin-bottom: 85px;
 }
 
-.advantages-title{
+.advantages-title {
 	float: left;
 	width: 300px;
 	margin-right: 100px;
 }
 
 .advantages-title:last-child{
-	margin-right: 0px;
+	margin-right: 0;
 }
 
-.advantages-1{
+.advantages-1 {
     background-image: url("../img/advantages-1.png");
     background-repeat: no-repeat;
     margin-right: 100px;
 }
 
-.advantages-2{
+.advantages-2 {
     background-image: url("../img/advantages-2.png");
     background-repeat: no-repeat;
     margin-right: 100px
 }
-.advantages-3{
+.advantages-3 {
     background-image: url("../img/advantages-3.png");
     background-repeat: no-repeat;
 }
 
 
-.about-us{
+.about-us {
 	margin-bottom: 80px;
 
 }
 
-.about-us-left{
+.about-us-left {
 	float: left;
 	width: 660px;
 }
 
-.about-us-right{
+.about-us-right {
 	float: right;
 	width: 380px;
 }
 
 
-.statisti!s{
+/*.about-us-right {
 	background-image: url("../img/statistics-illustration.png");
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 }
 
 
-.client{
+.client {
 	margin-bottom: 80px;
 }
 
-.img-client-photo-1{
+.img-client-photo-1 {
 	float: left;
-	width: 199px;
 	margin-left: 31px;
 	margin-right: 96px;
 }
 
-.img-client-photo-2{
+.img-client-photo-2 {
 	float: left;
-	width: 217px;
-	margin-right: 103px;
+	margin-right: 90px;
 }
 
-.img-client-photo-3{
+.img-client-photo-3 {
 	float: left;
-	width: 185px;
-	margin-right: 121px;
+	margin-right: 78px;
 }
 
-.img-client-photo-4{
+.img-client-photo-4 {
 	float: right;
-	width: 173px;
-	margin-right: 4px;<?>
+	margin-right: 43px;
 }
 
-.contacts{
-	width: 1440px;
+.contacts {
+	width: 100%;
 	height: 418px;
 	background-image: url("../img/background-map.png");
 	background-repeat: no-repeat;
 	margin-bottom: 71px;
 }
-.contacts-info{
+.contacts-info {
 	width: 319px;
 	height: 308px;
 	background-image: url("../img/white back.png");
 	background-repeat: no-repeat;
 }
 
-.main-footer{
+.main-footer {
 	margin-bottom: 70px;
 }
 
-.social{
+.social {
 	float: left;
 	width: 260px;
 	height: 80px;
 	margin-right: 100px;
 }
 
-.main-footer-info{
+.main-footer-info {
 	float: right;
 	width: 560px;
 	height: 80px;
 	margin-right: 200px;
 }
 
-.btn-contacts{
+.btn-contacts {
 	background-image: url("../img/btn-contacts.svg");
 }
-.btn-social-vk{
+.btn-social-vk {
 	background-image: url("../img/vk-icon.png");
     background-image: url("../img/social-background.svg");
 }
-.btn-social-fb{
+.btn-social-fb {
 	background-image: url("../img/fb-icon.png");
     background-image: url("../img/social-background.svg");
     background-repeat: no-repeat;
 }
-.btn-social-in{
+.btn-social-in {
 	background-image: url("../img/insta-icon.png");
     background-image: url("../img/social-background.svg");
     background-repeat: no-repeat;
 }
 
-/* чать каталога */
-.btn-buy{
+.btn-buy {
 	background-image: url("../img/btn-readmore.svg");
 }
-.site-info{
+.site-info {
 	background-color: rgb(238, 238, 238);
 }
 
-aside{
-	float:left;
+aside {
+	float: left;
 	width: 280px;
 	height: 779px;
 	margin-right: 60px;
 }
 
-.catalog{
+.catalog {
 	margin-bottom: 61px;
 
 }
 
-.catalog-title{
+.catalog-title {
 	float: left;
 	width: 133px;
 	margin-right: 267px;
-	margin-bottom: px;
 }
-.catalog-nav{
+.catalog-nav {
 	float: right;
 	width: 360px;
-	margin-bottom: px;
 }
 
-.catalog-gallery{
-
+.catalog-gallery {
+	width: 820px;
+	float: left;
 }
-.catalog-sites{
+	
+
+.catalog-site {
 	display: inline-block;
+	background: url(../img/browser.png) no-repeat center top;
 	vertical-align: top;
 	margin-right: 40px;
+	margin-bottom: 40px;
+	position: relative;
 }
-.figure{
-	
+
+img {
+	margin-top: 40px;
 }
-.site-info{
-	width: 360px;
+
+.site-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
-.header-title{
-	font-size: 55px;
+.header-title {
+	font-size: 45px;
 	font-weight: normal;
 	font-style: normal;
 	font-family: "Roboto", "Helvetica", "sans-serif";
