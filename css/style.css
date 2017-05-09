@@ -42,7 +42,15 @@ body {
 	margin-right: 203px;
 	margin-top: 49px;
 }
+/* не понимаю почему не меняется состояние картинки
+.heder-logo:hover {
+	opacity: 0,8;
+}
 
+.heder-logo:active {
+	opacity: 0,3;
+}
+*/
 .main-navigation {
 	float: left;
 	width: 440px;
@@ -54,6 +62,7 @@ body {
 	padding: 0;
 	list-style: none;
 	font-size: 0;
+	min-width: 550px;
 }
 
 .main-navigation li {
@@ -68,35 +77,27 @@ body {
 	text-decoration: none; 
 	text-transform: uppercase;
 	color: #000000;
-	pa
 }
 
-.main-navigation a:nth-child(1) {
-	padding-right: 48px;
-}
-/* не понимаю почему не раотааю last child сделал через классы по этому не могу сделать норм разметку, если делать через классы не сделаешь универсально, при активности пункта меню.
-.main-navigation a:nth-child(3) {
-	padding-right: 44px;
-}
-
-.main-navigation a:last-child {
-	padding-right: 10px;
-}
-*/
-
-/*
-.main-nav-studio {
+.main-navigation a {
 	padding-right: 48px;
 }
 
-.main-nav-studio.active {
+.main-navigation li:nth-child(1) a { 
+	padding-right: 45px;
+}
+.main-navigation li:nth-child(3) a { 
+	padding-right: 45px;
+}
+
+.main-navigation .active {
 	position: relative;
 	text-transform: uppercase;
 	color: #000000;
 
 }
 
-.main-nav-studio.active::after {
+.main-navigation .active::after {
 	content: "";
 	position: absolute;
 	height: 2px;
@@ -107,37 +108,25 @@ body {
   	left: 0;
 }
 
-
-
-.main-nav-client {
-	padding-right: 47px;
-}
-
-.main-nav-shop {
-	padding-right: 45px;
-}
-
-.main-nav-contacts {
-	padding-right: 0px;
-}
-*/
 .main-navigation a:hover {
 	color: #fb565a;
 }
 
-
-
-
-
+.main-navigation a:active {
+	color: rgba(0,0,0,0.3);
+}
 
 .basket {
 	float: right;
 	max-width: 115px;
-	margin-top: 78px;
+	margin-top: 80px;
+	margin-right: 60px;
 	padding-left: 42px;
 	background-image: url("../img/cart-icon.png");
-	background-repeat: no-repeat;
-	background-position: left center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 15px;
+    height: 15px;
 }
 
 .login{
@@ -149,6 +138,12 @@ body {
 .login:hover{
 	 color: #fb565a;
 }
+
+.login:active{
+	color: rgba(0,0,0,0.3);
+}
+
+
 
 .slider-wrap{
 	background-color: rgb(238, 238, 238);
@@ -163,6 +158,10 @@ body {
 	margin:0 auto;
 }
 
+.slider input[type=radio] {
+	position: absolute;
+	opacity: 0;
+}
 
 .slider-controls{
 	position: absolute;
@@ -175,7 +174,7 @@ body {
 	text-align: center;
 }
 
-.slider-controls i {
+.slider-controls label {
 	display: inline-block;
 	vertical-align: top;
 	width: 8px;
@@ -187,7 +186,9 @@ body {
 	cursor:pointer;
 }
 
-.slider-controls .active{
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"]{
 	background: #b8b8b8;
 }
 
@@ -223,19 +224,25 @@ body {
 	margin-bottom: 40px;
 }
 
+.slide{
+	display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+	display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+	display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+	display: block;
+}
+
 
 .slide:nth-child(1) {
 	background-image: url("../img/slide1.png");
     background-repeat:no-repeat;
     background-position: 431px 11px;
-}
-
-.slide{
-	display: none;
-}
-
-.slide:nth-child(1) {
-	display: block;
 }
 
 .slide:nth-child(2) {
@@ -264,15 +271,22 @@ body {
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
+}
 
+.btn-readmore:hover {
+	background-color: #e74246;
+}
+
+.btn-readmore:active {
+	color: rgba( 255,255,255,0.3);
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
 }
 
 .advantages-wrap {
 	margin-bottom: 80px;
 }
 
-.advantages {
-}
 
 .advantage {
 	position:relative;
@@ -315,8 +329,10 @@ body {
 
 }
 
+
+
 .btn-order-web {
-	display: block;
+	display: block;                     
 	width: 160px;
 	text-align:center;
 	margin-top: 31px;
@@ -328,7 +344,16 @@ body {
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
+}
 
+.btn-order-web:hover {
+	background-color: #e74246;
+}
+
+.btn-order-web:active{
+	background-color: #d7373b;
+	color: rgba(255,255,255,0.3);
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
 }
 
 .btn-order-app {
@@ -346,6 +371,15 @@ body {
 	cursor: pointer;
 }
 
+.btn-order-app:hover {
+	background-color: #00bc6c;
+}
+
+.btn-order-app:active {
+	background-color: #00aa62;
+	color: rgba(255,255,255,0.3);
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+}
 
 .btn-order-presentation {
 	display: block;
@@ -362,8 +396,18 @@ body {
 	cursor: pointer;
 }
 
+.btn-order-presentation:hover {
+	background-color: #eab534;
+}
+
+.btn-order-presentation:active {
+	background-color: #e5a722;
+	color: rgba(255,255,255,0.3);
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+}
+
 .about-us-wrap {
-	margin-bottom: 80px;
+	margin-bottom: 47px;
 	background-image: url(../img/line.png);
     background-repeat: no-repeat;
     background-position: 50% 0%;
@@ -472,43 +516,52 @@ body {
 
 
 .client-photos-wrap {
-	margin-bottom: 80;
-} /* не понимаю почему маргин не видит браузер*/
+	min-width: 190px;
+	background: url(../img/line.png) 50% 0% no-repeat, 
+				url(../img/line.png) 50% 182px no-repeat;
+	padding-bottom: 40px;
+	margin-bottom: 80px;
+
+}
 
 .img-client-1 {
 	float: left;
 	padding-right: 90px;
-	padding-top: 60px;
+	padding-top: 65px;
     padding-left: 30px;
     background-image: url(../img/clients.png);
     background-repeat: no-repeat;
     background-position: 279px 62px;
+    opacity: 0.2;
 }
 
 .img-client-2 {
 	float: left;
 	padding-right: 90px;
-	padding-top: 45px;
+	padding-top: 48px;
 	padding-left: 5px;
 	background-image: url(../img/clients.png);
     background-repeat: no-repeat;
     background-position: 260px 62px;
+    opacity: 0.2;
 }
 
 .img-client-3 {
 	float: left;
 	padding-right: 90px;
-	padding-top: 65px;
+	padding-top: 67px;
 	padding-left: 15px;
 	background-image: url(../img/clients.png);
     background-repeat: no-repeat;
     background-position: 255px 62px;
+    opacity: 0.2;
 }
 
 .img-client-4 {
 	float: left;
-	padding-top: 50px;
+	padding-top: 54px;
 	padding-left: 29px;
+	opacity: 0.2;
 }
 
 .img-client-photo-1 {
@@ -517,6 +570,13 @@ body {
 	margin-right: 96px;
 }
 
+.client-photos a:hover { /*не понимаю почему не работает*/
+	opacity: 1.0;
+}
+
+.client-photos a:active {
+	opacity: 0.1;
+}
 
 .img-client-photo-2 {
 	float: left;
@@ -597,11 +657,15 @@ body {
 	cursor: pointer;
 }
 
+.btn-contacts:hover {
+	background-color: #e74246;
+}
 
-
-
-
-
+.btn-contacts:active {
+	color: rgba( 255,255,255,0.3);
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+}
 
 
 .main-footer {
@@ -613,56 +677,71 @@ body {
 	padding: 0;
 }
 
-
-
 .social-icons {
-	float: left;
-	height: 80px;
+	position: absolute;
+	top: 5px;
 }
-
-.main-footer-info {
-	float: right;
-	width: 560px;
-	height: 80px;
-	margin-right: 200px;
-}
-
-.social {
-	display: inline-block;
-	width: 80px;
-	height: 80px;
-	margin-right: 0;
-    border: 0 solid white;
-	border-radius: 50%;
-	margin-right: 10px;
-	background-color: #bdc3c7;
-	vertical-align: middle;
-	
-}
-
-.social .social-vk {
-	position:absolute;
-	background-image: url("../img/vk-icon.png");
-}
-
-
-.social .social-fb {
-	position:absolute;
-
-}
-
-.social .social-in {
-	position:absolute;
-
-}
-
-
 
 .main-footer-info {
 	position: absolute;
 	left: 400px;
     top: 12px;
+	margin-right: 200px;
 }
+
+.social {
+	display: inline-block;
+	vertical-align: top;
+	width: 80px;
+	height: 80px;
+	margin-right: 0;
+    border: 0;
+	border-radius: 50%;
+	margin-right: 10px;
+	background-color: #bdc3c7;
+	position: relative;
+}
+
+.social:hover {
+	background-color: #e74246;
+}
+
+.social:active {
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+}
+
+.social:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50% -50%);
+	background-image: url("../img/sprite-icons.png");
+	background-repeat: no-repeat;
+}
+.social-vk:before {
+	width: 26px;
+    height: 15px;
+    background-position: -10px -128px;
+}
+/*не понимаю почему не работают картинки из спрайта, так же проблема с размещением*/
+
+.social .social-fb {
+	width: 21px;
+    height: 21px;
+    background-position: -10px -87px;
+
+}
+
+.social .social-in {
+	width: 21px;
+    height: 21px;
+    background-position: -10px -87px;
+
+}
+
+
 
 .footer-title {
 	font-size: 36px;
@@ -674,35 +753,172 @@ body {
 	margin-top: 10px;
 }
 
+.modal-write-to-us{
+	z-index: 1000;
+	position: absolute;
+	top: 1706px;
+	left: 50%;
+	width: 760px;
+	margin-left: -480px;
+	padding-top: 67px;
+	padding-bottom: 84px;
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: #ffffff;
+	box-shadow: 0 20px 40px 8px rgba( 0,0,0,0.75);
+}
 
-display: inline-block;
-	vertical-align: top;
-	width: 8px;
-	height: 8px;
-	margin: 0 7px;
-	background: white;
-	border: 5px solid white;
-	border-radius: 50%;
-	cursor:pointer;
+.modal-write-to-us-close {
+	position: absolute;
+	top: 78px;
+	left: 849px;
+	width: 21px;
+	height: 21px;
+	font-size: 0;
+	background-color: white;
+	border: 0;
+	cursor: pointer;
+}
 
-./*btn-contacts {
-	background-image: url("../img/btn-contacts.svg");
+.modal-write-to-us-close::before,
+.modal-write-to-us-close::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: -3px;
+	width: 27px;
+	height: 5px;
+	background-color: #fecccd;
+	opacity: 0,1;
 }
-.btn-social-vk {
-	background-image: url("../img/vk-icon.png");
-    background-image: url("../img/social-background.svg");
+
+.modal-write-to-us-close::before {
+	transform: rotate(45deg);
 }
-.btn-social-fb {
-	background-image: url("../img/fb-icon.png");
-    background-image: url("../img/social-background.svg");
-    background-repeat: no-repeat;
+
+.modal-write-to-us-close::after {
+	transform: rotate(-45deg);
 }
-.btn-social-in {
-	background-image: url("../img/insta-icon.png");
-    background-image: url("../img/social-background.svg");
-    background-repeat: no-repeat;
+/*не знаю как сделать цевт кнопки закрытия при наведении и нажатии*/
+.modal-write-to-us-close::before:hover {
+	background-color: #fb565a;
 }
-*/
+.modal-write-to-us-close::after:hover {
+	background-color: #fb565a;
+}
+
+.modal-write-to-us h2 {
+	font-size: 45px;
+	font-weight: 400;
+	line-height: 45px;
+	margin: 0;
+	margin-bottom: 41px;
+}
+
+.modal-write-to-us p {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18px;
+	margin: 0;
+	margin-bottom: 9px;
+}
+
+.modal-write-to-us-form input[type="text"],
+.modal-write-to-us-form input[type="email"] {
+	font-size: 16px;
+	line-height: 18px;
+	color: #444444;
+	font-family: "Roboto", "Helvetica", "sans-serif";
+	border: 2px solid #d7dcde;
+	border-radius: 3px;
+}
+
+.modal-write-to-us-form input[type="text"]:hover {
+	border-color: #b4b9bb;
+}
+
+.modal-write-to-us-form input[type="email"]:hover {
+	border-color: #b4b9bb;
+}
+
+.modal-write-to-us-form input[type="text"]:active {
+	border-color: #000000;
+}
+
+.modal-write-to-us-form input[type="email"]:active {
+	border-color: #000000;
+}
+
+.modal-write-to-us-form input[type="text"]:invalid {
+	border-color: #e74246;
+	color: #e74246;
+}
+
+.modal-write-to-us-form input[type="email"]:invalid {
+	border-color: #e74246;
+	color: #e74246;
+}
+
+.input-name {
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 34px;
+}
+
+.input-email {
+	float: right;
+	float: left;
+}
+
+.user-letter {
+	float: left;
+	width: 728px;
+}
+
+.input-name input {
+	padding: 14px;
+	width: 328px;
+}
+
+.input-email input {
+	padding: 14px;
+	width: 328px;
+}
+
+.user-letter input {
+	width: 100%;
+
+	margin-bottom: 47px;
+	padding: 14px;
+	padding-bottom: 82px;	
+}
+
+.btn-write-to-us {
+	width: 260px;
+	padding: 16px 80px;
+	background-color: #fb565a;
+	color: #fff;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+	border: 0;
+	border-radius: 3px;
+}
+
+.btn-write-to-us:hover {
+	background-color: #e74246;
+}
+
+.btn-write-to-us:active {
+	color: rgba( 255,255,255,0.3);
+	background-color: #d7373b;
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+}
+
+
+
+
+
 
 
 
@@ -717,6 +933,11 @@ display: inline-block;
 
 
 
+
+
+
+/*CATALOG*/
+
 .shop-title {
 	padding-top: 190px;
     text-align: center;
@@ -724,15 +945,153 @@ display: inline-block;
 }
 
 .heder-text {
+	display: inline-block;
 	font-size: 55px;
 	line-height: 55px;
 }
 
 .main-catalog {
-	margin-top: 60px;
+	margin-top: 55px;
 }
 
 
+/* SAID BAR */
+
+
+.side-bar {
+	float: left;
+	width: 280px;
+	height: 779px;
+	margin-right: 60px;
+}
+
+.side-bar-title{
+	margin-bottom: 48px;
+}
+
+.side-bar-text{
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.rande-filter{
+	width: 260px;
+}
+
+.range-controls {
+	position: relative;
+	height: 42px;
+	background-color: #eeeeee;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	padding-top: 39px;
+	padding-right: 20px;
+    padding-left: 20px;
+}
+
+.range-controls .scale {
+	height: 2px;
+	background-color: #d7dcde;
+
+}
+
+.range-controls .bar {
+	width: 70%;
+	height: 2px;
+	background-color: #00ca74;
+}
+
+.range-controls .toggle {
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	width: 4px;
+	height: 4px;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+	background-color: #ababab;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;
+}
+
+.range-controls .toggle-min {
+	left: 18px;
+}
+
+.range-controls .toggle-max {
+	left: 160px;
+}
+
+.price-controls {
+	font-size: 0;
+}
+
+.price-controls label {
+	font-size: 16px;
+	text-transform: uppercase;
+	display: inline-block;
+	width: 50%;
+}
+
+.price-controls input {
+	font-size: 16px;
+	font-family: "Roboto", "Helvetica", "sans-serif";
+	text-align: center;
+	color: #283136;
+	width: 60px;
+	padding: 8px 10px;
+	margin-left: 12px;
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 3px;
+}
+
+.max-price {
+	text-align: right;
+}
+
+.radio-btn {
+	margin-bottom: 10px;
+}
+
+}
+.radio-btn label {
+	cursor: pointer;
+}
+
+.radio-btn input {
+
+	display: ;
+}
+
+.radio-btn-name:before {
+			content:'';
+			height: 25px;
+			width: 25px;
+			display: flex;
+			align-items: center;
+			float: left;
+			background-color: #b8b8b8;
+			color:#b8b8b8;
+			border-radius: 50%;
+			margin-right: 10px;
+}
+
+.radio-btn input:checked {
+	content:'';
+			background-color: #249991;
+}
+
+
+
+
+
+
+
+
+/* КАТАЛОГ СПРАВА*/
 
 
 .catalog-right {
@@ -742,16 +1101,8 @@ display: inline-block;
 	margin-left: 60px;
 }
 
-.catalog-title {
-	float: left;
-}
 
-.catalog-title-text {
-	font-size: 18px;
-	line-height: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
+
 
 .catalog-assort{
 	list-style: none;
@@ -768,47 +1119,31 @@ display: inline-block;
 
 
 
-aside {
-	float: left;
-	width: 280px;
-	height: 779px;
-	margin-right: 60px;
-}
-
-.range-controls {
-	height: 42px;
-	background-color: #eeeeee;
-	border-radius: 5px;
-	margin-bottom: 15px;
-	padding-top: 39px;
-	padding-right: 20px;
-    padding-left: 20px;
-}
-
-.range-controls .scale {
-	height: 2px;
-	background-color: #d7dcde;
-
-}
-
-
-
 
 .catalog {
 	margin-bottom: 61px;
 
 }
 
-.header-title {
-	display: inline-block;
+.catalog-text {
+	margin-bottom: 48px;
 }
 
+.catalog-title {
+	display: inline-block;
+	vertical-align: top;
+}
 
-
+.catalog-title-text {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
 
 .catalog-nav {
 	float: right;
-	width: 360px;
+	min-width: 360px;
 }
 
 .catalog-gallery {

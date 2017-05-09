@@ -15,16 +15,16 @@
         <nav class="main-navigation"> 
           <ul>
             <li>
-              <a class="main-nav-studio active">Студия</a>
+              <a class="main-nav active">Студия</a>
             </li>
             <li>
-              <a class="main-nav-client" href="#">Клиенты</a>
+              <a class="main-nav" href="#">Клиенты</a>
             </li>
             <li>
-              <a class="main-nav-shop" href="#">Магазин</a>
+              <a class="main-nav" href="#">Магазин</a>
             </li>
             <li>
-              <a class="main-nav-contacts" href="#">Контакты</a>
+              <a class="main-nav" href="#">Контакты</a>
             </li> 
           </ul> 
         </nav>
@@ -37,11 +37,14 @@
       <section class="slider-wrap">
         <div class="container clearfix">
           <div class="slider">
-            <div class="slider-controls">
-              <i class="active"></i>
-              <i></i>
-              <i></i>
-            </div>
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+              <div class="slider-controls">
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+              </div>
             <div class="slides">
               <div class="slide">
                 <div class="slide-text">
@@ -136,37 +139,29 @@ AppStore и Google Play</p>
             </div>
           </div>     
         </section>
-
-
-
-        <section class="client-photos-wrap" style="margin-bottom: 120px;">
-        <!-- прописал стиль тут, потому что не работает в ссs. как сделать по человечески?-->
+        <section class="client-photos-wrap"> 
           <div class="container clearfix">
           	<div class="client-photos">
-
             	<div class="img-client-1">
               		<a href="#">
               		<img src="img/logo-1.png" alt="Html academy" width="199" height="68"> 
              		 </a>
             	</div>
-
             	<div class="img-client-2">
               		<a href="#">
               		<img src="img/logo-2.png" alt="Barbershop borodinski" width="210" height="90"> 
              		 </a>
             	</div>
-
             	<div class="img-client-3">
               		<a href="#">
              		 <img src="img/logo-3.png" alt="Pink" width="185" height="52"> 
               		</a>
-           		 </div>
-
+           		</div>
             	<div class="img-client-4">
              		 <a href="#">
               		<img src="img/logo-4.png" alt="Mishka" width="173" height="84"> 
               		</a>
-            </div>
+                </div>
             </div>
           </div>
         </section>
@@ -188,21 +183,48 @@ AppStore и Google Play</p>
     </main>
 
     <footer class="main-footer">
-    	<div class="container clearfix">
-      <div class="container">
-        <div class="social-icons">
-          <a target="_blank" class="social social-vk" href="https://vk.com/htmlacademy"></a>
-          <a target="_blank" class="social social-fb" href="https://ru-ru.facebook.com/htmlacademy/"></a>
-          <a target="_blank" class="social social-in" href="https://www.instagram.com/htmlacademy/"></a>
-        </div>
-        <div class="main-footer-info">
+      <div class="container clearfix">
+        <div class="container">
+          <div class="social-icons">
+            <a target="_blank" class="social social-vk" href="https://vk.com/htmlacademy"></a>
+            <a target="_blank" class="social social-fb" href="https://ru-ru.facebook.com/htmlacademy/"></a>
+            <a target="_blank" class="social social-in" href="https://www.instagram.com/htmlacademy/"></a>
+          </div>
+          <div class="main-footer-info">
           <span class="footer-title">Давайте дружить, это выгодно!</span>
-              <p class="footer-paragraph">Скидка 10% для друзей из социальных сетей.</p>
+            <p class="footer-paragraph">Скидка 10% для друзей из социальных сетей.</p>
+          </div>    
         </div>    
-      </div>    
       </div>  
     </footer>
+    <div class="modal-write-to-us">
+      <button class="modal-write-to-us-close" type="button" title="Закрыть">Закрыть</button>
+      <h2>Напишите нам</h2>
+      <form class="modal-write-to-us-form">
+        <div class="input-name">
+          <ladel >
+            <p>Ваше имя:</p>
+            <input  type="text" name="user-name" placeholder="Представьтесь, пожалуйста"> 
+          </ladel>
+        </div>
 
+        <div class="input-email">
+          <ladel >
+            <p>Ваш e-mail:</p>
+            <input  type="email" name="user-email" placeholder="Для отправки ответа">
+          </ladel>
+        </div> 
+
+        <div class="user-letter">
+          <ladel class="text-letter">
+            <p>Текст письма:</p>
+            <input  type="text" name="user-letter" placeholder="В свободной форме">
+          </ladel> 
+          <button class="btn-write-to-us" type="submit">Отправить</button>
+
+        </div>
+      </form>
+    </div>
 
   </body>
 </html>

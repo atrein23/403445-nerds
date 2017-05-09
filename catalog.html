@@ -12,7 +12,7 @@
           <img src="img/nerds-logo.png" alt="дизайн-студия Нёрдс" width="160" height="65">
         </a>
         <nav class="main-navigation"> 
-          <ul>
+          <ul class="navigation-list">
             <li>
               <a class="main-nav-studio" href="#">Студия</a>
             </li>
@@ -42,22 +42,35 @@
     <main class="main-catalog">
     <div class="container clearfix">
 
-      <aside>
+      <aside class="side-bar">
+
+<div class="side-bar-title">
+<span class="side-bar-text">Стоимость:</span>
+</div>
+
         <form ation="#" method="post">
+
+
           <div class="rande-filter">
+
+
             <div class="range-controls">
+
           	  <div class="scale">
           	    <div class="bar"></div>
           	  </div>
+
               <div class="toggle toggle-min"></div>
               <div class="toggle toggle-max"></div>
+
             </div>
+
 
             <div class="price-controls">
            	  <label class="min-price">от<input name="min-price" type="text" value="0"></label>
            	   <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
+            </div>
 
-          </div>
 
           </div>
 
@@ -70,21 +83,37 @@
           </fieldset>
           <fieldset class="grid"> -->
 
+<div class="radio-buttons">
 
-            <legend>Сетка:</legend>
-              <div>
-                <input id="radio-1" type="radio" name="radio-grid" value="Adaptive" checked>
-                <label for="radio-1">Адаптивная</label>
+<span class="side-bar-text">Сетка:</span>
+
+
+              <div class="radio-btn">
+                <label for="radio-1">
+                  <input id="radio-1" type="radio" name="radio-grid" value="Adaptive" checked>
+                    <span class="radio-btn-name">Адаптивная</span>
+                </label>
               </div>
-              <div>
-                <input id="radio-2" type="radio" name="radio-grid" value="Adaptive">
-                <label for="radio-2">Фиксированная</label>
+
+
+              <div class="radio-btn">
+                <label for="radio-2">
+                  <input id="radio-2" type="radio" name="radio-grid" value="Adaptive">
+                    <span class="radio-btn-name">Фиксированная</span> 
+                </label>
               </div>
-              <div>
-                <input id="radio-3" type="radio" name="radio-grid" value="Adaptive">
-                <label for="radio-3">Резиновая</label>
+
+
+              <div class="radio-btn">
+                <label for="radio-3">
+                  <input id="radio-3" type="radio" name="radio-grid" value="Adaptive">
+                    <span class="radio-btn-name">Резиновая</span>
+                </label>
               </div>
-          </fieldset>
+
+
+</div>
+          
           <fieldset class="specificity">
             <legend>Особенности:</legend>
               <div class-"checkbox-1">
@@ -117,7 +146,7 @@
 
 
       <section class="catalog-right">
-
+      <div class="catalog-text">
         <div class="catalog-title">
           <span class="catalog-title-text">Сортировать:</span>
         </div>
@@ -131,7 +160,7 @@
             <li></li>
           </ul>
         </div>
-
+ </div>
 
         <div class="catalog-gallery">
           <div class="catalog-site">
