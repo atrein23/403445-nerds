@@ -35,199 +35,156 @@
         </div>
       </div>
     </header>
-
-
-
-
     <main class="main-catalog">
     <div class="container clearfix">
-
       <aside class="side-bar">
-
-<div class="side-bar-title">
-<span class="side-bar-text">Стоимость:</span>
-</div>
-
+        <div class="side-bar-title">
+          <span class="side-bar-text">Стоимость:</span>
+        </div>
         <form ation="#" method="post">
-
-
           <div class="rande-filter">
-
-
             <div class="range-controls">
-
           	  <div class="scale">
           	    <div class="bar"></div>
           	  </div>
-
               <div class="toggle toggle-min"></div>
               <div class="toggle toggle-max"></div>
-
             </div>
-
-
             <div class="price-controls">
            	  <label class="min-price">от<input name="min-price" type="text" value="0"></label>
            	   <label class="max-price">до<input name="max-price" type="text" value="15000"></label>
             </div>
-
-
           </div>
-
-       <!--   <fieldset class="cost">
-            <legend>Стоимость:</legend>
-              <label>от</label>
-              <input type="text" name="total" id="total-field" value="0">
-              <label>до</label>
-              <input type="text" name="total" id="total-field" value="15000">
-          </fieldset>
-          <fieldset class="grid"> -->
-
-<div class="radio-buttons">
-
-<span class="side-bar-text">Сетка:</span>
-
-
-              <div class="radio-btn">
-                <label for="radio-1">
-                  <input id="radio-1" type="radio" name="radio-grid" value="Adaptive" checked>
-                    <span class="radio-btn-name">Адаптивная</span>
-                </label>
-              </div>
-
-
-              <div class="radio-btn">
-                <label for="radio-2">
-                  <input id="radio-2" type="radio" name="radio-grid" value="Adaptive">
-                    <span class="radio-btn-name">Фиксированная</span> 
-                </label>
-              </div>
-
-
-              <div class="radio-btn">
+          <div class="radio-buttons">
+            <div class="title-radio">
+              <span class="side-bar-text">Сетка:</span>
+            </div>
+            <div class="radio-btn">
+              <input id="radio-1" type="radio" name="radio-grid" value="Adaptive" checked>
+              <label for="radio-1">
+                <span class="radio-btn-name">Адаптивная</span>
+              </label>
+            </div>
+            <div class="radio-btn">
+              <input id="radio-2" type="radio" name="radio-grid" value="Adaptive">
+			  <label for="radio-2">
+                <span class="radio-btn-name">Фиксированная</span> 
+              </label>
+            </div>
+            <div class="radio-btn">
+              <input id="radio-3" type="radio" name="radio-grid" value="Adaptive">
                 <label for="radio-3">
-                  <input id="radio-3" type="radio" name="radio-grid" value="Adaptive">
-                    <span class="radio-btn-name">Резиновая</span>
+                  <span class="radio-btn-name">Резиновая</span>
                 </label>
-              </div>
-
-
-</div>
-          
-          <fieldset class="specificity">
-            <legend>Особенности:</legend>
-              <div class-"checkbox-1">
-                <input id="check-1" type="checkbox" checked>
-                <lade for="check-1">Слайдер</lade>
-              </div>
-              <div class-"checkbox-2">
-                <input id="check-2" type="checkbox" >
-                <lade for="check-2">Блок преимуществ</lade>
-              </div>
-              <div class-"checkbox-3">
-                <input id="check-3" type="checkbox" >
-                <lade for="check-3">Новости</lade>
-              </div>
-              <div class-"checkbox-4">
-                <input id="check-4" type="checkbox" >
-                <lade for="check-4">Галерея</lade>
-              </div>
-              <div class-"checkbox-5">
-                <input id="check-5" type="checkbox" >
-                <lade for="check-5">Корзина</lade>
-              </div>
-              <div>
-                <input type="submit" value="Показать">
-              </div>
-          </fieldset>
+            </div>
+          </div>
+          <div class="specificity"> 
+            <div class="titel-checkbox">
+            <span class="side-bar-text">Особенности:</span>
+            </div>
+            <div class="checkbox">
+              <input id="check-1" type="checkbox" checked>
+                <label for="check-1">Слайдер</label>
+            </div>
+            <div class="checkbox">
+              <input id="check-2" type="checkbox">
+              <label for="check-2">Блок преимуществ</label>
+            </div>
+            <div class="checkbox">
+              <input id="check-3" type="checkbox">
+              <label for="check-3">Новости</label>
+            </div>
+            <div class="checkbox">
+              <input id="check-4" type="checkbox">
+              <label for="check-4">Галерея</label>
+            </div>
+            <div class="checkbox">
+              <input id="check-5" type="checkbox">
+              <label for="check-5">Корзина</label>
+            </div>
+            <div class="">
+              <input type="submit" value="Показать" class="btn-side-bar">
+            </div>
+          </div>
         </form>
       </aside>
-
-
-
       <section class="catalog-right">
-      <div class="catalog-text">
-        <div class="catalog-title">
-          <span class="catalog-title-text">Сортировать:</span>
+        <div class="catalog-text">
+          <div class="catalog-title">
+            <span class="catalog-title-text">Сортировать:</span>
+          </div>
+          <div class="catalog-nav">
+            <ul class="catalog-assort">
+              <li><button class="btn-catalog-assort" type="button" titel="">По цене</button></li>
+              <li><button class="btn-catalog-assort" type="button" titel="">По типу</button></li>
+              <li><button class="btn-catalog-assort" type="button" titel="">По названию</button></li>
+              <button class="btn-triangle down" type="button" title="вниз">вниз</button>
+              <button class="btn-triangle up" type="button" title="вверх">вверх</button>
+            </ul>
+          </div>
         </div>
-
-        <div class="catalog-nav">
-          <ul class="catalog-assort">
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По названию</li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
- </div>
-
         <div class="catalog-gallery">
-          <div class="catalog-site">
-            <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="360" height="576">
+          <div class="catalog-site"><!--перезалил картинки сайтов, в фотошопе слил шапку и сам скриншот, мне это уже не кажется хоошей идеей, как лучше закинуть шапку? -->
+            <img src="img/img-sedona.png" alt="Сайт Sedona" width="360" height="617">
             <div class="site-info">
               <h3 class="gallery">Sedona</h3>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт
+ туристов</p>
               <a class="btn-buy" href="#">9900 Руб.</a>  
             </div> 
           </div>
-
-
           <div class="catalog-site">
-            <img src="img/img-pink.jpg" alt="Сайт Pink" width="360" height="576">
+            <img src="img/img-pink.png" alt="Сайт Pink" width="360" height="617">
             <div class="site-info">
               <h3 class="gallery"> Pink app</h3>
-              <p>Продуктывный лендинг Приложение для IOS и Android</p>
+              <p>Продуктывный лендинг 
+Приложение для IOS и Android</p>
               <a class="btn-buy" href="#">9900 Руб.</a>  
             </div> 
           </div>
-
-
           <div class="catalog-site">
-            <img src="img/img-barbershop.jpg" alt="Сайт Barbershop" width="360" height="576">
+            <img src="img/img-barbershop.png" alt="Сайт Barbershop" width="360" height="617">
             <div class="site-info">
-              <h3 class="gallery">Barbershop</h3>
-               <p>Сайт салона красоты для мужчин,да.</p>
+              <h3 class="">Barbershop</h3>
+               <p>Сайт салона красоты.
+Для мужчин,да.</p>
                <a class="btn-buy" href="#">9900 Руб.</a>  
             </div> 
           </div>
-
-
           <div class="catalog-site">
-            <img src="img/img-mishka.jpg" alt="Сайт Mishka" width="360" height="576">
+            <img src="img/img-mishka.png" alt="Сайт Mishka" width="360" height="617">
             <div class="site-info">
               <h3 class="gallery">Mishka</h3>
-              <p>Интернет-магазин вязаных игрушек</p>
+              <p>Интернет-магазин 
+вязаных игрушек</p>
               <a class="btn-buy" href="#">9900 Руб.</a>  
             </div> 
           </div>
-
           <div class="catalog-site">
-            <img src="img/img-aplus.jpg" alt="Сайт A plus" width="360" height="576">
+            <img src="img/img-aplus.png" alt="Сайт A plus" width="360" height="617">
             <div class="site-info">
               <h3 class="gallery">A plus</h3>
-              <p>Лендинг курсов повышения квалификации </p>
+              <p>Лендинг курсов повышения 
+квалификации </p>
               <a class="btn-buy" href="#">9900 Руб.</a>  
             </div> 
           </div>
           <div class="catalog-site">
-            <img src="img/img-kvast.jpg" alt="Сайт Kvas" width="360" height="576">
+            <img src="img/img-kvast.png" alt="Сайт Kvas" width="360" height="617">
             <div class="site-info">
               <h3 class="gallery">Kvas</h3>
-              <p>Промо-сайт производителя крафтового кваса<br> </p>
-              <a class="btn-buy" href="#">9900 Руб.</a>  
+              <p>Промо-сайт производителя 
+крафтового кваса<br> </p>
+              <a class="btn-catalog-site" href="#">9900 Руб.</a>  
             </div> 
           </div>
-
           <div class="pagination">
-            <a class="btn-pagination">1</a>
-            <a class="btn-pagination" href="#">2</a>
-            <a class="btn-pagination" href="#">3</a>
-            <a class="btn-pagination-text" href="#">Следующая</a>
+            <a class="btn-pagination active"><spn>1</span></a>
+            <a class="btn-pagination" href="#"><spn>2</span></a>
+            <a class="btn-pagination" href="#"><spa>3</span></a>
+            <a class="btn-pagination-text" href="#"><san>Следующая</span></a>
           </div>
         </div>
-
-
       </section>
       </div>
     </main>
