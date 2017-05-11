@@ -42,15 +42,15 @@ body {
 	margin-right: 203px;
 	margin-top: 49px;
 }
-/* не понимаю почему не меняется состояние картинки
+
 .heder-logo:hover {
-	opacity: 0,8;
+	opacity: 0.8;
 }
 
 .heder-logo:active {
-	opacity: 0,3;
+	opacity: 0.3;
 }
-*/
+
 .main-navigation {
 	float: left;
 	width: 440px;
@@ -94,7 +94,6 @@ body {
 	position: relative;
 	text-transform: uppercase;
 	color: #000000;
-
 }
 
 .main-navigation .active::after {
@@ -119,9 +118,9 @@ body {
 .basket {
 	float: right;
 	max-width: 115px;
-	margin-top: 80px;
+	margin-top: 82px;
 	margin-right: 60px;
-	padding-left: 42px;
+	padding-left: 40px;
 	background-image: url("../img/cart-icon.png");
     background-repeat: no-repeat;
     display: block;
@@ -129,23 +128,21 @@ body {
     height: 15px;
 }
 
-.login{
+.login {
 	text-decoration: none; 
 	text-transform: uppercase;
 	color: #000000;
 }
 
-.login:hover{
+.login:hover {
 	 color: #fb565a;
 }
 
-.login:active{
+.login:active {
 	color: rgba(0,0,0,0.3);
 }
 
-
-
-.slider-wrap{
+.slider-wrap {
 	background-color: rgb(238, 238, 238);
 	margin-bottom: 80px;
 }
@@ -163,7 +160,7 @@ body {
 	opacity: 0;
 }
 
-.slider-controls{
+.slider-controls {
 	position: absolute;
 	left: 50%;
 	margin-left: -100px;
@@ -188,12 +185,12 @@ body {
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"]{
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
 	background: #b8b8b8;
 }
 
 .slide {
-    position:absolute;
+    position: absolute;
     top:0;
     left:0;
     width:100%;
@@ -201,7 +198,7 @@ body {
     overflow:hidden;
 }
 
-.slide-text{
+.slide-text {
 	padding-top: 70px;
 	width: 513px;
 	height: 271px;
@@ -221,7 +218,7 @@ body {
 .slider-paragraph{
 	padding-top: 11px;
 	white-space: pre;
-	margin-bottom: 40px;
+	margin-bottom: 39px;
 }
 
 .slide{
@@ -237,7 +234,6 @@ body {
 #btn-3:checked ~ .slides .slide:nth-child(3) {
 	display: block;
 }
-
 
 .slide:nth-child(1) {
 	background-image: url("../img/slide1.png");
@@ -257,13 +253,12 @@ body {
     background-position: 431px 11px;
 }
 
-
 .btn-readmore {
 	display: block;
 	width: 240px;
 	text-align:center;
 	margin-top: 20px;
-	padding:12px 0;
+	padding: 13px 0;
 	text-decoration: none; 
 	text-transform: uppercase;
 	color: #ffffff;
@@ -287,7 +282,6 @@ body {
 	margin-bottom: 80px;
 }
 
-
 .advantage {
 	position:relative;
 	float: left;
@@ -295,7 +289,6 @@ body {
 	margin-right: 100px;
 	padding-top: 150px;
 }
-
 
 .advantage:nth-child(1) {
 	background-image: url("../img/advantages-1.png");
@@ -320,16 +313,12 @@ body {
 	margin-bottom: 20px;
 	font-size: 24px;
 	text-transform: uppercase;
-
 }
 
 .advantages-paragraph {
 	color: #283136;
 	white-space: pre;
-
 }
-
-
 
 .btn-order-web {
 	display: block;                     
@@ -472,21 +461,19 @@ body {
     background-position: 0 2px;
 }
 
-/* не понимаю почему. когда задаю стили через класс для caption заголовок пропадает со страницы*/
-.statistics caption {
-	margin-bottom: 43px;
-	text-transform: uppercase;
-}
-
-
 .statistics {
     display: table;
     border-collapse: collapse;
     border-spacing: 2px;
     border-color: grey;
 }
-
-
+.statistics  caption{
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 44px;
+}
 
 .table-number{
 	font-size: 45px;
@@ -504,16 +491,15 @@ body {
 	padding-left:3px;
 }
 
-.table-cent{
+.table-cent {
 	vertical-align: super;
 	font-size: 26px;
 }
 
-.table-text{
+.table-text {
 	line-height: 18px;
 	padding-top: 28px;
 }
-
 
 .client-photos-wrap {
 	min-width: 190px;
@@ -521,7 +507,7 @@ body {
 				url(../img/line.png) 50% 182px no-repeat;
 	padding-bottom: 40px;
 	margin-bottom: 80px;
-
+	opacity: 0.2;
 }
 
 .img-client-1 {
@@ -532,7 +518,6 @@ body {
     background-image: url(../img/clients.png);
     background-repeat: no-repeat;
     background-position: 279px 62px;
-    opacity: 0.2;
 }
 
 .img-client-2 {
@@ -543,7 +528,6 @@ body {
 	background-image: url(../img/clients.png);
     background-repeat: no-repeat;
     background-position: 260px 62px;
-    opacity: 0.2;
 }
 
 .img-client-3 {
@@ -554,14 +538,12 @@ body {
 	background-image: url(../img/clients.png);
     background-repeat: no-repeat;
     background-position: 255px 62px;
-    opacity: 0.2;
 }
 
 .img-client-4 {
 	float: left;
 	padding-top: 54px;
 	padding-left: 29px;
-	opacity: 0.2;
 }
 
 .img-client-photo-1 {
@@ -570,7 +552,7 @@ body {
 	margin-right: 96px;
 }
 
-.client-photos a:hover { /*не понимаю почему не работает*/
+.client-photos a:hover {   /*не понимаю почему не работает апасити на ховер, при этом эктив рабоатет*/
 	opacity: 1.0;
 }
 
@@ -594,19 +576,24 @@ body {
 }
 
 .contacts {
-	width: 100%;
 	height: 418px;
-	background-image: url("../img/background-map.png");
-	background-repeat: no-repeat;
 	margin-bottom: 60px;
 }
 
 .map {
-	position: relative;
+	position: absolute;
+	top: 0;
+	left: -140px;
+	width: 1440px;
+	height: 420px;
+	background-image: url("../img/map 1.png");
+	background-repeat: no-repeat;
+	margin-bottom: 60px;
 }
 .contacts-info {
 	position: absolute;
-	margin-top: 53px;
+	margin-top: 54px;
+	left: 140px;
 	width: 319px;
 	height: 308px;
 	background-image: url("../img/white back.png");
@@ -635,7 +622,7 @@ body {
 	margin-bottom: 18px;
 }
 
-.contacts-phone{
+.contacts-phone {
 	font-size: 16px;
 	line-height: 18px;
 	color: #666666;
@@ -662,7 +649,7 @@ body {
 }
 
 .btn-contacts:active {
-	color: rgba( 255,255,255,0.3);
+	color: rgba(255,255,255,0.3);
 	background-color: #d7373b;
 	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
 }
@@ -697,7 +684,7 @@ body {
 	margin-right: 0;
     border: 0;
 	border-radius: 50%;
-	margin-right: 10px;
+	margin-right: 8px;
 	background-color: #bdc3c7;
 	position: relative;
 }
@@ -716,7 +703,7 @@ body {
 	position: absolute;
 	top: 50%;
 	left:50%;
-	transform: translate(-50% -50%);
+	transform: translate(-50%, -50%);
 	background-image: url("../img/sprite-icons.png");
 	background-repeat: no-repeat;
 }
@@ -727,21 +714,17 @@ body {
 }
 /*не понимаю почему не работают картинки из спрайта, так же проблема с размещением*/
 
-.social .social-fb {
-	width: 21px;
-    height: 21px;
-    background-position: -10px -87px;
-
+.social-fb:before {
+	width: 16px;
+    height: 24px;
+    background-position: -10px -45px;
 }
 
-.social .social-in {
-	width: 21px;
+.social-in:before {
+	width: 25px;
     height: 21px;
     background-position: -10px -87px;
-
 }
-
-
 
 .footer-title {
 	font-size: 36px;
@@ -799,8 +782,8 @@ body {
 .modal-write-to-us-close::after {
 	transform: rotate(-45deg);
 }
-/*не знаю как сделать цевт кнопки закрытия при наведении и нажатии*/
-.modal-write-to-us-close::before:hover {
+/*сделал, но менят цвет невидимая кнопка, а не сам крестик*/
+.modal-write-to-us-close:hover {
 	background-color: #fb565a;
 }
 .modal-write-to-us-close::after:hover {
@@ -914,9 +897,7 @@ body {
 	background-color: #d7373b;
 	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
 }
-
 /*CATALOG*/
-
 .shop-title {
 	padding-top: 190px;
     text-align: center;
@@ -932,7 +913,6 @@ body {
 .main-catalog {
 	margin-top: 55px;
 }
-
 
 /* SAID BAR */
 
@@ -1033,11 +1013,7 @@ body {
 }
 
 .radio-buttons {
-	margin-bottom: 45px;
-}
-
-.title-radio {
-	margin-bottom: 13px;
+	margin-bottom: 44px;
 }
 
 .radio-btn {
@@ -1050,7 +1026,7 @@ input[type="radio"] {
 
 input[type="radio"] + label {
 	display: block;
-	margin: 10px 0;
+	margin: 15px 0;
 	padding-left: 36px;
 	position: relative;
 	cursor: pointer;
@@ -1059,10 +1035,10 @@ input[type="radio"] + label {
 input[type="radio"] + label::before {
 	content: "";
 	position: absolute;
-	top: 2px;
+	top: -1px;
 	left: 1px;
-	width: 20px;
-	height: 20px;
+	width: 19px;
+	height: 19px;
 	border: 3px solid #b8b8b8;
 	border-radius: 50%;
 }
@@ -1070,11 +1046,11 @@ input[type="radio"] + label::before {
 input[type="radio"]:checked + label::after {
 	content: "";
 	position: absolute;
-	top: 11px;
-	left: 10px;
-	width: 4px;
-	height: 4px;
-	border: 2px solid #b8b8b8;
+	top: 7px;
+	left: 9px;
+	width: 3px;
+	height: 3px;
+	border: 3px solid #b8b8b8;
 	border-radius: 50%;
 	background-color: #b8b8b8;
 }
@@ -1130,8 +1106,9 @@ input[type="checkbox"]:checked + label::after {
 	left: 0;
 	background-image: url(../img/checkbox-on.png);
 	background-repeat: no-repeat;
-}/*подскажи почему его перекрывает before*/
+}
 
+/*подскажи почему его перекрывает before*/
 
 .btn-side-bar {
 	display: block;
@@ -1170,7 +1147,16 @@ input[type="checkbox"]:checked + label::after {
 	margin-left: 60px;
 }
 
+.catalog-nav {
+	position: relative;
+	float: right;
+	min-width: 360px;
+}
+
 .catalog-assort{
+	position: absolute;
+	top: -1px;
+	left: -6px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1180,9 +1166,13 @@ input[type="checkbox"]:checked + label::after {
 	display: inline-block;
 	vertical-align: bottom;
 	text-transform: uppercase;
-	margin-right: 27px;
+	margin-right: 10px;
 	font-size: 14px;
 	line-height: 18px;
+}
+
+.catalog-assort li:nth-child(3) {
+	margin-right: 40px;
 }
 
 .btn-catalog-assort {
@@ -1192,7 +1182,20 @@ input[type="checkbox"]:checked + label::after {
 	font-family: "Roboto", "Helvetica", sans-serif;
 	font-size: 14px;
 	line-height: 18px;
+	color: rgba(0,0,0,0.3);
 	cursor: pointer;
+}
+
+.btn-catalog-assort:hover {
+	color: rgba(0,0,0,0.6);
+}
+
+.btn-catalog-assort:active {
+	color: rgba(0,0,0,1);
+}
+
+.catalog-assort .active {
+	color: rgba(0,0,0,1)
 }
 /*подскажи пожалуйста , как лучше выровнять эти кнопки*/
 .btn-triangle {
@@ -1209,8 +1212,8 @@ input[type="checkbox"]:checked + label::after {
 .down:after {
 	content: "";
 	position: absolute;
-	top: 1px;
-	left: 1px;
+	top: 0px;
+	left: 0px;
 	width: 0; 
 	height: 0;
 	border-left: 4px solid transparent;
@@ -1218,28 +1221,28 @@ input[type="checkbox"]:checked + label::after {
 	border-top: 9px solid rgba(0,0,0,0.2);
 	
 }
-/*та же проблема что и с кнопкой закрыть на попапе*/
-.down:hover {
+/*кнопки треугольники очень странно ведут себя при нажатии, не знаю, что с эти делать*/
+.down:hover::after {
 	border-top: 9px rgba(0,0,0,0.4);
 }
 
-.down:active {
+.down:active::after {
 	border-top: 9px solid #000000;
 }
 
 .up:after {
 	content: "";
 	position: absolute;
-	top: 1px;
-	left: 1px;
+	top: 0px;
+	left: 9px;
 	width: 0px; 
 	height: 0;
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
-	border-bottom: 9px solid #000000;
+	border-bottom: 9px solid rgba(0,0,0,0.2);
 }
-
-.up:after:hover {
+/*не работает ховер, но работате эктив*/
+.up::hover {
 	border-top: 9px rgba(0,0,0,0.4);
 }
 
@@ -1269,11 +1272,6 @@ input[type="checkbox"]:checked + label::after {
 	text-transform: uppercase;
 }
 
-.catalog-nav {
-	float: right;
-	min-width: 360px;
-}
-
 .catalog-gallery {
 	width: 820px;
 	float: left;
@@ -1282,45 +1280,87 @@ input[type="checkbox"]:checked + label::after {
 
 .catalog-site {
 	display: inline-block;
+	height: 617px;
 	background: url(../img/browser.png) no-repeat center top;
 	vertical-align: top;
 	margin-right: 37px;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 	position: relative;
 }
 
+.catalog-site:nth-child(3) {
+	margin-bottom: 29px;
+}
+
+.catalog-site:nth-child(4) {
+	margin-bottom: 29px;
+}
+/* не понимаю как сделать видимым sit-info при наведении на картинку+изменение шапки*/
+.catalog-site a:hover {
+
+}
+
+.catalog-site img {
+	margin-top: 40px;
+}
+.catalog-site:nth-child(5) {
+	margin-bottom: 59px;
+}
+
 .site-info {
+	display: none;
 	background-color: rgb(238, 238, 238);
 	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
 }
+/*не работает чаилд, пришлось дублировать через классы 5 и 6 карточки
+.site-info:nth-child(5) {
+	bottom: -8px;
+}
 
-.site-info h3 {
+.site-info:nth-child(6) {
+	bottom: -8px;
+}
+*/
+.site-info-bottom {
+	background-color: rgb(238, 238, 238);
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	right: 0
+}
+
+
+.site-info-title {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
-	margin-top: 26px;
+	margin-top: 27px;
+	margin-bottom: 15px;
 }
 
-.site-info p {
+.site-info-text {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 400;
 	text-align: center;
 	color: #666666;
 	white-space: pre;
-	margin-bottom: 16px;
+	margin-bottom: 0px;
+	margin-top: 14px;
 }
 
-.site-info a {
+.btn-catalog-site {
 	display: block;
 	width: 200px;
 	text-align:center;
-	margin-top: 20px;
+	margin-top: 30px;	
+	margin-left: 80px;
+	margin-bottom: 44px;
 	padding:13px 0;
 	text-decoration: none; 
 	text-transform: uppercase;
@@ -1329,15 +1369,17 @@ input[type="checkbox"]:checked + label::after {
 	border: none;
 	border-radius: 3px;
 	cursor: pointer;
-	margin-left: 80px;
-	margin-bottom: 51px;
-}
 
-.site-info a:hover {
+}
+/*жутки еостыли, но не знаю как сделать по другому*/
+.kvast {
+	margin-top: 11px;
+}
+.btn-catalog-site:hover {
 	background-color: #e74246;
 }
 
-.site-info a:active {
+.btn-catalog-site:active {
 	color: rgba( 255,255,255,0.3);
 	background-color: #d7373b;
 	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
@@ -1345,24 +1387,24 @@ input[type="checkbox"]:checked + label::after {
 
 .btn-pagination {
 	display: inline-block;
-	width: 50px;
+	width: 45px;
 	height: 24px;
-	margin-right: 11px;
-	margin-right: 10px;
+	margin-right: 7px;
+	border: 3px solid #eeeeee;
 	background-color: #eeeeee;
+	border-radius: 3px;
 	position: relative;
 	text-decoration: none;
 	vertical-align: middle;
 	text-align: center;
-	padding: 13px 0px;
+	padding: 10px 0px;
 }
 
 .pagination .active {
 	display: inline-block;
-	width: 50px;
+	width: 45px;
     border: 3px solid #dbdbdb;
     border-radius: 3px;
-	margin-right: 10px;
 	background-color: #ffffff;
 	position: relative;
 	text-decoration: none;
@@ -1370,7 +1412,21 @@ input[type="checkbox"]:checked + label::after {
 	text-align: center;
 	font-size: 16px;
 }
-/*подскажи пожалуйста как кнопки лучше всего разметить на стр? а то через пикселпёрфект прогонял минут 10 и все равно не вышло*/
+
+.btn-pagination:hover {
+	background-color: #dfdfdf;
+	border-color: #dfdfdf;
+}
+
+.btn-pagination:active {
+	background-color: #d5d5d5;
+	border: 3px solid #bfbfbf
+			3px solid #d5d5d5
+			3px solid #d5d5d5;
+	color: rgba(0,0,0,0.3);
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
+}
+/*голову сломал, немогу сделать кнпоки нормальными при нажатии, мешает бордер и он не стилизуется по отдельным линиям*/
 
 .btn-pagination-text {
 	display: inline-block;
@@ -1385,4 +1441,14 @@ input[type="checkbox"]:checked + label::after {
 	color: #000;
 	padding: 13px 0px;
 	cursor: pointer;
+}
+
+.btn-pagination-text:hover {
+	background-color: #dfdfdf;
+}
+
+.btn-pagination-text:active {
+	background-color: #d5d5d5;
+	color: rgba(0,0,0,0.3);
+	box-shadow: inset 0 3px 0 0 rgba(0,0,0,0.1);
 }

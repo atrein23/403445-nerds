@@ -115,7 +115,7 @@
           </div>
           <div class="catalog-nav">
             <ul class="catalog-assort">
-              <li><button class="btn-catalog-assort" type="button" titel="">По цене</button></li>
+              <li><button class="btn-catalog-assort active" type="button" titel="">По цене</button></li>
               <li><button class="btn-catalog-assort" type="button" titel="">По типу</button></li>
               <li><button class="btn-catalog-assort" type="button" titel="">По названию</button></li>
               <button class="btn-triangle down" type="button" title="вниз">вниз</button>
@@ -124,58 +124,60 @@
           </div>
         </div>
         <div class="catalog-gallery">
-          <div class="catalog-site"><!--перезалил картинки сайтов, в фотошопе слил шапку и сам скриншот, мне это уже не кажется хоошей идеей, как лучше закинуть шапку? -->
-            <img src="img/img-sedona.png" alt="Сайт Sedona" width="360" height="617">
-            <div class="site-info">
-              <h3 class="gallery">Sedona</h3>
-              <p>Информационный сайт
- туристов</p>
-              <a class="btn-buy" href="#">9900 Руб.</a>  
-            </div> 
-          </div>
           <div class="catalog-site">
-            <img src="img/img-pink.png" alt="Сайт Pink" width="360" height="617">
+            <a class="" href="#">
+            <img src="img/img-sedona.jpg" alt="Сайт Sedona" width="360" height="576">
             <div class="site-info">
-              <h3 class="gallery"> Pink app</h3>
-              <p>Продуктывный лендинг 
-Приложение для IOS и Android</p>
-              <a class="btn-buy" href="#">9900 Руб.</a>  
-            </div> 
-          </div>
-          <div class="catalog-site">
-            <img src="img/img-barbershop.png" alt="Сайт Barbershop" width="360" height="617">
-            <div class="site-info">
-              <h3 class="">Barbershop</h3>
-               <p>Сайт салона красоты.
-Для мужчин,да.</p>
-               <a class="btn-buy" href="#">9900 Руб.</a>  
-            </div> 
-          </div>
-          <div class="catalog-site">
-            <img src="img/img-mishka.png" alt="Сайт Mishka" width="360" height="617">
-            <div class="site-info">
-              <h3 class="gallery">Mishka</h3>
-              <p>Интернет-магазин 
-вязаных игрушек</p>
-              <a class="btn-buy" href="#">9900 Руб.</a>  
-            </div> 
-          </div>
-          <div class="catalog-site">
-            <img src="img/img-aplus.png" alt="Сайт A plus" width="360" height="617">
-            <div class="site-info">
-              <h3 class="gallery">A plus</h3>
-              <p>Лендинг курсов повышения 
-квалификации </p>
-              <a class="btn-buy" href="#">9900 Руб.</a>  
-            </div> 
-          </div>
-          <div class="catalog-site">
-            <img src="img/img-kvast.png" alt="Сайт Kvas" width="360" height="617">
-            <div class="site-info">
-              <h3 class="gallery">Kvas</h3>
-              <p>Промо-сайт производителя 
-крафтового кваса<br> </p>
+              <h3 class="site-info-title">Sedona</h3>
+              <p class="site-info-text">Информационный сайт
+для туристов</p>
               <a class="btn-catalog-site" href="#">9900 Руб.</a>  
+            </div> 
+            </a>
+          </div>
+          <div class="catalog-site">
+            <img src="img/img-pink.jpg" alt="Сайт Pink" width="360" height="576">
+            <div class="site-info">
+              <h3 class="site-info-title"> Pink app</h3>
+              <p class="site-info-text">Продуктывный лендинг 
+Приложение для IOS и Android</p>
+              <a class="btn-catalog-site" href="#">9900 Руб.</a>  
+            </div> 
+          </div>
+          <div class="catalog-site">
+            <img src="img/img-barbershop.jpg" alt="Сайт Barbershop" width="360" height="576">
+            <div class="site-info">
+              <h3 class="site-info-title">Barbershop</h3>
+               <p class="site-info-text">Сайт салона красоты.
+Для мужчин,да.</p>
+               <a class="btn-catalog-site" href="#">9900 Руб.</a>  
+            </div> 
+          </div>
+          <div class="catalog-site">
+            <img src="img/img-mishka.jpg" alt="Сайт Mishka" width="360" height="576">
+            <div class="site-info">
+              <h3 class="site-info-title">Mishka</h3>
+              <p class="site-info-text">Интернет-магазин 
+вязаных игрушек</p>
+              <a class="btn-catalog-site" href="#">9900 Руб.</a>  
+            </div> 
+          </div>
+          <div class="catalog-site">
+            <img src="img/img-aplus.jpg" alt="Сайт A plus" width="360" height="576">
+            <div class="site-info-bottom">
+              <h3 class="site-info-title">A plus</h3>
+              <p class="site-info-text">Лендинг курсов повышения 
+квалификации </p>
+              <a class="btn-catalog-site" href="#">9900 Руб.</a>  
+            </div> 
+          </div>
+          <div class="catalog-site">
+            <img src="img/img-kvast.jpg" alt="Сайт Kvas" width="360" height="576">
+            <div class="site-info-bottom">
+              <h3 class="site-info-title">Кваст</h3>
+              <p class="site-info-text">Промо-сайт производителя 
+крафтового кваса<br> </p>
+              <a class="btn-catalog-site kvast" href="#">9900 Руб.</a>  
             </div> 
           </div>
           <div class="pagination">
@@ -188,29 +190,36 @@
       </section>
       </div>
     </main>
-    <div class="contacts">
-      <div class="container">
-        <div class="contacts-info">
-          <div class="contacts-title">Nёrds design studio</div>
-          <div class="contacts-text">191186, Санкт-Петербург
-                 ул. Б. Конюшенная, д. 19/8</div>
-          <div class="contacts-phone"> тел. +7(812)275-75-75</div>
-          <a class="btn-red" href="#">НАПИШИТЕ НАМ</a>
-        </div>
-      </div>          
-    </div>
+    <section class="contacts">
+      <div class="container clearfix">
+        <div class="map">
+          <div class="contacts-info">
+            <div class="contacts-text">
+              <div class="contacts-title">Nёrds design studio</div>
+                <div class="contacts-address">191186, Санкт-Петербург,
+ул. Б. Конюшенная, д. 19/8</div>
+                <div class="contacts-phone"> тел. +7 (812) 275-75-75</div>
+                  <a class="btn-contacts" href="#">Напишите нам</a>
+            </div>
+          </div>
+         </div>
+        </div>          
+    </section>
+    </main>
     <footer class="main-footer">
-      <div class="container clearfix"">
-        <div class="social">
-          <a target="_blank" class="btn-social-vk" href="https://vk.com/htmlacademy">Вконтакте</a>
-          <a target="_blank" class="btn-social-fb" href="https://ru-ru.facebook.com/htmlacademy/">Фейсбук</a>
-          <a target="_blank" class="btn-social-in" href="https://www.instagram.com/htmlacademy/">Инстаграм</a>
-        </div>
-        <div class="main-footer-info">
-            <b>Давайте дружить, это выгодно!</b>
-              Скидка 10% для друзей из социальных сетей.
-        </div>     
-      </div>      
+      <div class="container clearfix">
+        <div class="container">
+          <div class="social-icons">
+            <a target="_blank" class="social social-vk" href="https://vk.com/htmlacademy"></a>
+            <a target="_blank" class="social social-fb" href="https://ru-ru.facebook.com/htmlacademy/"></a>
+            <a target="_blank" class="social social-in" href="https://www.instagram.com/htmlacademy/"></a>
+          </div>
+          <div class="main-footer-info">
+          <span class="footer-title">Давайте дружить, это выгодно!</span>
+            <p class="footer-paragraph">Скидка 10% для друзей из социальных сетей.</p>
+          </div>    
+        </div>    
+      </div>  
     </footer>
   </body>
 </html>
