@@ -181,16 +181,7 @@ body {
 	cursor:pointer;
 }
 
-
-
-#btn-1:checked ~ label::before {
-	display: block;
-}
-
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
-	display:;.slider-controls label::before {
+.slider-controls label::before {
 	display: none;
     content: "";
     position: absolute;
@@ -201,6 +192,15 @@ body {
     border: 2px solid #b8b8b8;
     border-radius: 50%;
 }
+
+#btn-1:checked ~ label::before {
+	display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+	display:;
 }
 
 .slide {
@@ -778,7 +778,7 @@ body {
 }
 
 .modal-write-to-us{
-	display: none;
+	display: non
 	z-index: 1000;
 	position: absolute;
 	top: 1706px;
@@ -843,7 +843,8 @@ body {
 	font-weight: 500;
 }
 
-.modal-write-to-us p {
+.modal-write-to-us span {
+	display: block;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 18px;
