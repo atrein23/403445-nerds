@@ -10,11 +10,11 @@ body {
 	min-width: 1200px;
 }
 
-.titel-text {
+.title-text {
 	font-size: 55px;
 	font-weight: normal;
 	font-style: normal;
-	font-family: "Roboto", "Helvetica", "sans-serif";
+	font-family: "Roboto", "Helvetica", sans-serif;
 	color: rgb (0, 0, 0);
 	line-height: 55px;
 }
@@ -103,7 +103,7 @@ body {
 	height: 2px;
 	background-color: #fb565a;
 	top: 30px;
-	right: 48px;
+	right: 45px;
   	bottom: 0;
   	left: 0;
 }
@@ -121,10 +121,9 @@ body {
 	max-width: 115px;
 	margin-top: 78px;
 	padding-left: 41px;
-	background-image: url("../img/cart-icon.png");
-	background-position: 1px 4px;
+	background-image: url(../img/sprite-icons.png);
+	background-position: -406px -27px;
     background-repeat: no-repeat;
-    background-size: 15px 15px;
     display: block;
 	text-decoration: none; 
 	text-transform: uppercase;
@@ -170,6 +169,7 @@ body {
 }
 
 .slider-controls label {
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	width: 8px;
@@ -181,10 +181,22 @@ body {
 	cursor:pointer;
 }
 
+label::before {
+	/*display: none;*/
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #b8b8b8;
+    border-radius: 50%;
+}
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
-	background: #b8b8b8;
+	display:;
 }
 
 .slide {
@@ -400,10 +412,12 @@ body {
 }
 
 .about-us-wrap {
-	margin-bottom: 47px;
-	background-image: url(../img/line.png);
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
+	margin-bottom: 38px;
+}
+
+.about-us {
+	display: inline-block;
+	border-top: 2px solid #eee;
 }
 
 .about-us-left {
@@ -458,6 +472,7 @@ body {
 .about-us-right {
 	padding-top: 245px;
 	margin-top: 40px;
+	margin-left: 140px;
 	float: right;
 	width: 360px;
 	background-image: url("../img/statistics-illustration.png");
@@ -507,47 +522,70 @@ body {
 
 .client-photos-wrap {
 	min-width: 190px;
-	background: url(../img/line.png) 50% 0% no-repeat, 
-				url(../img/line.png) 50% 182px no-repeat;
-	padding-bottom: 40px;
-	margin-bottom: 80px;
-	opacity: 0.2;
+	margin-bottom: 73px;
+}
+
+.client-photos {
+	display: inline-block;
+	min-width: 184px;
+	border-top: 2px solid #eee;
+	border-bottom: 2px solid #eee;
+	padding-bottom: 37px;
 }
 
 .img-client-1 {
 	float: left;
 	padding-right: 90px;
-	padding-top: 65px;
+	padding-top: 62px;
     padding-left: 30px;
-    background-image: url(../img/clients.png);
-    background-repeat: no-repeat;
-    background-position: 279px 62px;
+}
+
+.img-client-1::before {
+	content: "";
+    border-right: 2px solid #eee;
+    height: 53px;
+    position: absolute;
+    left: 299px;
+    top: 64px;
 }
 
 .img-client-2 {
 	float: left;
 	padding-right: 90px;
-	padding-top: 48px;
+	padding-top: 46px;
 	padding-left: 5px;
-	background-image: url(../img/clients.png);
-    background-repeat: no-repeat;
-    background-position: 260px 62px;
+}
+
+.img-client-2::before {
+	content: "";
+    border-right: 2px solid #eee;
+    height: 53px;
+    position: absolute;
+    left: 599px;
+    top: 64px;
 }
 
 .img-client-3 {
 	float: left;
 	padding-right: 90px;
-	padding-top: 67px;
-	padding-left: 15px;
-	background-image: url(../img/clients.png);
-    background-repeat: no-repeat;
-    background-position: 255px 62px;
+	padding-top: 65px;
+	padding-left: 14px;
+}
+
+.img-client-3::before {
+	content: "";
+    border-right: 2px solid #eee;
+    height: 53px;
+    position: absolute;
+    left: 899px;
+    top: 64px;
 }
 
 .img-client-4 {
 	float: left;
-	padding-top: 54px;
-	padding-left: 29px;
+	padding-top: 52px;
+	padding-left: 30px;
+	padding-right: 43px;
 }
 
 .img-client-photo-1 {
@@ -555,6 +593,8 @@ body {
 	margin-left: 31px;
 	margin-right: 96px;
 }
+
+
 
 .client-photos a { 
 	opacity: 0.2;
@@ -711,19 +751,19 @@ body {
 .social-vk:before {
     width: 26px;
     height: 15px;
-    background-position: -26px -240px;
+    background-position: -326px -27px;
 }
 
 .social-fb:before {
     width: 12px;
     height: 22px;
-    background-position: -26px -93px;
+    background-position: -185px -27px;
 }
 
 .social-in:before {
     width: 21px;
     height: 21px;
-    background-position: -26px -167px;
+    background-position: -251px -27px;
 }
 
 .footer-title {
@@ -737,6 +777,7 @@ body {
 }
 
 .modal-write-to-us{
+	display: none;
 	z-index: 1000;
 	position: absolute;
 	top: 1706px;
@@ -1118,7 +1159,10 @@ input[type="checkbox"] + label::before {
 	display: block;
 	width: 27px;
 	height: 23px;
-	background-image: url(../img/checkbox-off.png);
+	background-image: url(../img/sprite-icons.png);
+	width: 23px;
+    height: 23px;
+    background-position: -27px -27px;
 	opacity: 0.4;
 	background-repeat: no-repeat;
 	position: absolute;
@@ -1127,7 +1171,10 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="checkbox"]:checked + label::before {
-	background-image: url(../img/checkbox-on.png);
+	background-image: url(../img/sprite-icons.png);
+	width: 27px;
+    height: 23px;
+    background-position: -104px -27px;
 	opacity: 1.0;
 }
 
@@ -1198,7 +1245,7 @@ input[type="checkbox"]:checked + label::before {
 	color: rgba(0,0,0,0.3);
 	cursor: pointer;
 	text-transform: uppercase;
-	margin-left: 27px;
+	margin-left: 25px;
 	font-size: 14px;
 	line-height: 18px;
 	padding: 0;
@@ -1223,7 +1270,7 @@ input[type="checkbox"]:checked + label::before {
 	position: relative;
 	top: -6px;
 }
-/*
+
 .btn-triangle {
 	position: relative;
 	font-size: 0;
@@ -1234,8 +1281,8 @@ input[type="checkbox"]:checked + label::before {
 	background-color: white;
 	padding: 0;
 }
-*/
 
+/*
 .btn-triangle {
     position: relative;
     font-size: 0;
@@ -1246,7 +1293,7 @@ input[type="checkbox"]:checked + label::before {
     background-color: white;
     padding: 0;
     margin-left: 10px;
-}    
+}  */  
 .down:after {
 	content: "";
 	position: absolute;
@@ -1254,7 +1301,7 @@ input[type="checkbox"]:checked + label::before {
 	left: 50%;
 	width: 0; 
 	height: 0;
-	transform: translate(-50% -50%);
+	transform: translate(-50%, -50%);
 	border-left: 4.5px solid transparent;
 	border-right: 4.5px solid transparent;
 	border-top: 9px solid rgba(0,0,0,0.2);
@@ -1276,7 +1323,7 @@ input[type="checkbox"]:checked + label::before {
 	left: 50%;
 	width: 0; 
 	height: 0;
-	transform: translate(-50% -50%);
+	transform: translate(-50%, -50%);
 	border-left: 4px solid transparent;
 	border-right: 4px solid transparent;
 	border-bottom: 9px solid rgba(0,0,0,0.2);
@@ -1287,7 +1334,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .up:active::after {
-	border-top: 9px solid #000000;
+	border-bottom-color: #000;
 }
 
 
@@ -1321,11 +1368,34 @@ input[type="checkbox"]:checked + label::before {
 .catalog-site {
 	display: inline-block;
 	height: 617px;
-	background: url(../img/browser.png) no-repeat center top;
 	vertical-align: top;
 	margin-right: 37px;
 	margin-bottom: 35px;
 	position: relative;
+}
+
+.catalog-site::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 40px;
+	background: url(../img/browser.png) no-repeat center top;
+	opacity: 0.12;
+}
+
+.catalog-site:hover::before {
+	opacity: 1;
+}
+
+.catalog-site:hover {
+	box-shadow: 0 6px 15px rgba();
+	border: 1 px;
+}
+
+.catalog-site:hover .site-info {
+	display: block;
 }
 
 .catalog-site:nth-child(3) {
@@ -1334,10 +1404,6 @@ input[type="checkbox"]:checked + label::before {
 
 .catalog-site:nth-child(4) {
 	margin-bottom: 29px;
-}
-/* не понимаю как сделать видимым sit-info при наведении на картинку+изменение шапки*/
-.catalog-site a:hover {
-
 }
 
 .catalog-site img {
@@ -1357,15 +1423,11 @@ input[type="checkbox"]:checked + label::before {
 	right: 0;
 }
 
-.catalog-site:hover .site-info {
-	display: block;
-}
-
-.catalog-site::nth-child(5) .site-info: {
+.catalog-site:nth-child(5) .site-info {
 	bottom: -8px;
 }
 
-.catalog-site:nth-child(6) .site-info: {
+.catalog-sitenth-child(6) .site-info {
 	bottom: -8px;
 }
 
